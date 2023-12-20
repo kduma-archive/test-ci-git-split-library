@@ -1,9 +1,9 @@
-name: Release
+name: Pre-Release
 
 on:
   push:
     tags:
-      - v[0-9]+.[0-9]+.[0-9]+
+      - v[0-9]+.[0-9]+.[0-9]+-[a-zA-Z]+.[0-9]+
 
 jobs:
   deploy:
@@ -28,8 +28,8 @@ jobs:
         with:
           allowUpdates: true
           draft: false
-          makeLatest: true
-          prerelease: false
+          makeLatest: false
+          prerelease: true
           name: ${{ github.ref_name }}
           body: ${{ steps.changelog.outputs.changes }}
           token: ${{ github.token }}
