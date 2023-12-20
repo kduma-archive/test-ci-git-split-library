@@ -1,6 +1,6 @@
 {
     "name": "test-ci/library",
-    "description": "test",
+    "description": "test next",
     "type": "library",
     "autoload": {
         "psr-4": {
