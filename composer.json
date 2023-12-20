@@ -1,0 +1,11 @@
+{
+    "name": "test-ci/library",
+    "description": "test",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "TestCi\\Library\\": "src/"
+        }
+    },
+    "require": {}
+}
