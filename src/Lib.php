@@ -4,8 +4,8 @@ namespace TestCi\Library;
 
 class Lib
 {
-    public function helloWorld(string $name = 'World'): string
+    public function helloWorld(string $name = 'World', bool $question = true): string
     {
-        return "Hello {$name}?";
+        return sprintf("Hello %s%s", $name, $question ? '?' : '.');
     }
 }
