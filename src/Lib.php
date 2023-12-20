@@ -6,6 +6,6 @@ class Lib
 {
     public function hello(string $name = 'World')
     {
-        return "Hello {$name}!";
+        return "Hello {$name}?";
     }
 }
