@@ -6,6 +6,6 @@ class Lib
 {
     public function helloWorld(string $name = 'World', bool $question = true): string
     {
-        return sprintf("Hello from beta, %s%s", $name, $question ? '?' : '.');
+        return sprintf("Hello from stable, %s%s", $name, $question ? '?' : '.');
     }
 }
