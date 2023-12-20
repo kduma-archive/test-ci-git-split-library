@@ -21,7 +21,7 @@ jobs:
           github_token: ${{ secrets.MONOREPO_SPLITTER_PERSONAL_ACCESS_TOKEN }}
           github_user: kduma
           workflow_file_name: satis.yml
-          ref: release-branch
+          ref: master
           wait_interval: 10
           client_payload: '{"repository-url": "https://github.com/kduma-archive/test-ci-git-split-library"}'
           propagate_failure: false
